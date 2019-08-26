@@ -1,0 +1,75 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:       italian_greyhound_01.jpg  label:          italian greyhound
+ 2 key:       italian_greyhound_02.jpg  label:          italian greyhound
+ 3 key:                  hourse_01.jpg  label:                     hourse
+ 4 key:              coffee_cup_01.jpg  label:                 coffee cup
+
+     MATCH:
+
+      italian_greyhound_01.jpg: 
+Real:          italian greyhound   Classifier:              italian greyhound
+
+ NOT A MATCH:
+
+      italian_greyhound_02.jpg: 
+Real:          italian greyhound   Classifier:            banded gecko, gecko
+
+                 hourse_01.jpg: 
+Real:                     hourse   Classifier:                         sorrel
+
+             coffee_cup_01.jpg: 
+Real:                 coffee cup   Classifier:                     coffee mug
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+      italian_greyhound_01.jpg: 
+Real:          italian greyhound   Classifier:              italian greyhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+      italian_greyhound_02.jpg: 
+Real:          italian greyhound   Classifier:            banded gecko, gecko  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                 hourse_01.jpg: 
+Real:                     hourse   Classifier:                         sorrel  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             coffee_cup_01.jpg: 
+Real:                 coffee cup   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 25.000000
+pct_correct_dogs    : 50.000000
+pct_correct_breed   : 50.000000
+pct_correct_notdogs : 100.000000
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:          italian greyhound   Classifier:            banded gecko, gecko
+
+** Total Elapsed Runtime: 0:59:59
